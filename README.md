@@ -1,0 +1,2 @@
+# Prime
+🔰 Moderation | Discord BOT
