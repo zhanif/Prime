@@ -32,34 +32,34 @@
 - `userinfo` - Sends anything about user information
 
 **Miscellaneous**
-`announce` - Gives announcement to specific channel
-`autorole` - Gives specific role after user joined the server
-`clean` - Deletes message in channel with deletebulk
-`delrole` - Delete some role from user
-`giverole` - Gives user specific role
-`mutedrole` - Gives role whenever user is muted
-`modrole` - Sets the default moderation role
-`nick` - Changes nickname in server
-`prefix` - Change bot prefix, note that the default prefix can't be changed
-`random` - Generates random number
-`reason` - Changes specific reason about an activity in modlog
-`rolecolor` - Change specific role's color in server
-`setnick` - Change another user's nick in server
-`timezone` - Changes the default timezone to specific ones
+- `announce` - Gives announcement to specific channel
+- `autorole` - Gives specific role after user joined the server
+- `clean` - Deletes message in channel with deletebulk
+- `delrole` - Delete some role from user
+- `giverole` - Gives user specific role
+- `mutedrole` - Gives role whenever user is muted
+- `modrole` - Sets the default moderation role
+- `nick` - Changes nickname in server
+- `prefix` - Change bot prefix, note that the default prefix can't be changed
+- `random` - Generates random number
+- `reason` - Changes specific reason about an activity in modlog
+- `rolecolor` - Change specific role's color in server
+- `setnick` - Change another user's nick in server
+- `timezone` - Changes the default timezone to specific ones
  
 **Bot Information**
-`about` - Sends information about bot
-`invite`- Gives invitation link for bot's hideout server
-`version` - Checks bot version in order to keep update
+- `about` - Sends information about bot
+- `invite`- Gives invitation link for bot's hideout server
+- `version` - Checks bot version in order to keep update
 
 **Developer Only**
-`botimg` - Changes bot's avatar image
-`botserver` - Checks all server that used the Prime bot
-`botstorage` - Checks all storage used for store data
-`invis` - Changes bot status to invisible
-`ignore` - Makes user, they can't use this bot
-`rollback` - Deletes all collection data
-`unignore` - Makes user can interact again with bot
-`shutdown` - Destroy bot sessions
-`sleep` - Makes bot unavailable for a while
-`restart` - Re-start the bot's session
+- `botimg` - Changes bot's avatar image
+- `botserver` - Checks all server that used the Prime bot
+- `botstorage` - Checks all storage used for store data
+- `invis` - Changes bot status to invisible
+- `ignore` - Makes user, they can't use this bot
+- `restart` - Re-start the bot's session
+- `rollback` - Deletes all collection data
+- `shutdown` - Destroy bot sessions
+- `sleep` - Makes bot unavailable for a while
+- `unignore` - Makes user can interact again with bot
