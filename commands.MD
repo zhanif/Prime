@@ -31,7 +31,7 @@
 - `time` - Gives specific time based on date
 - `userinfo` - Sends anything about user information
 
-**Miscellaneous**
+### **Miscellaneous**
 - `announce` - Gives announcement to specific channel
 - `autorole` - Gives specific role after user joined the server
 - `clean` - Deletes message in channel with deletebulk
@@ -47,12 +47,12 @@
 - `setnick` - Change another user's nick in server
 - `timezone` - Changes the default timezone to specific ones
  
-**Bot Information**
+### **Bot Information**
 - `about` - Sends information about bot
 - `invite`- Gives invitation link for bot's hideout server
 - `version` - Checks bot version in order to keep update
 
-**Developer Only**
+## **Developer**
 - `botimg` - Changes bot's avatar image
 - `botserver` - Checks all server that used the Prime bot
 - `botstorage` - Checks all storage used for store data
