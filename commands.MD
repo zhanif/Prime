@@ -17,66 +17,66 @@
 ### 🗺 Activity
 | Commands | Description |
 | --- | --- |
-| `votechannel <#channel/id>` |  |
+| `votechannel <#channel/id>` | set the channel to be reacted by 4 reactions [✅,📝,❌,🗑] |
 
 ### 📜 Log Recorder
 | Commands | Description |
 | --- | --- |
-| `messagelog <#channel/id>` |  |
-| `modlog <#channel/id>` |  |
-| `serverlog <#channel/id>` |  |
-| `starlog <#channel/id>` |  |
-| `voicelog <#channel/id>` |  |
-| `welcomelog <#channel/id>` |  |
+| `messagelog <#channel/id>` | set the channel for logging message activity |
+| `modlog <#channel/id>` | set the channel for logging moderator activity |
+| `serverlog <#channel/id>` | set the channel for logging server activity |
+| `starlog <#channel/id>` | set the channel for logging reaction activity |
+| `voicelog <#channel/id>` | set the channel for logging voice activity |
+| `welcomelog <#channel/id>` | set the channel for join or leave activity |
 
 ### 📚 Information
 | Commands | Description |
 | --- | --- |
-| `channels` |  |
-| `help` |  |
-| `roles` |  |
-| `serverinfo` |  |
-| `settings` |  |
-| `time` |  |
-| `userinfo [@user/id]` |  |
+| `channels` | show all channels in current server |
+| `help` | display commands for Prime bot |
+| `roles` | show all roles in current server |
+| `serverinfo` | show the server information |
+| `settings` | show the Prime settings in current server |
+| `time` | show the current time |
+| `userinfo [@user/id]` | show the user information |
 
 ### 🎆 Miscellaneous
 | Commands | Description |
 | --- | --- |
-| `announce <#channel/id/HERE>` |  |
-| `autorole <@role/id>` |  |
-| `clean <number(1-99)>` |  |
-| `delrole <@user/id> <@role/id>` |  |
-| `giverole <@user/id> <@role/id>` |  |
-| `modrole <@role/id>` |  |
-| `mutedrole <@role/id>` |  |
-| `nick <new nick>` |  |
-| `prefix <new prefix>` |  |
-| `random <start(number)> <end(number)>` |  |
-| `reason <number> <reason>` |  |
-| `rolecolor <hex number>` |  |
-| `setnick <@user/id> [new nick]` |  |
-| `timezone <continent/city>` |  |
+| `announce <#channel/id/HERE>` | send announcement in specific channel |
+| `autorole <@role/id>` | set the autorole that given every member joined server |
+| `clean <number(1-99)>` | delete message from channel |
+| `delrole <@user/id> <@role/id>` | delete role from someone |
+| `giverole <@user/id> <@role/id>` | give role to someone |
+| `modrole <@role/id>` | set the moderation role |
+| `mutedrole <@role/id>` | set the role that is muted, let user cannot talk or send messages |
+| `nick <new nick>` | change the current nickname |
+| `prefix <new prefix>` | change the bot prefixes, default prefix can't be seted |
+| `random <start(number)> <end(number)>` | generate random number between 2 number |
+| `reason <number> <reason>` | change the reason for logged moderation case |
+| `rolecolor <hex number>` | change the role color |
+| `setnick <@user/id> [new nick]` | change the nick for specific user |
+| `timezone <continent/city>` | change the current server timezone (default is **Asia/Jakarta**) |
 
 ### 🎮 Bot Information
 | Commands | Description |
 | --- | --- |
-| `about` |  |
-| `invite` |  |
-| `ping` |  |
-| `version` |  |
+| `about` | show about bot infomation |
+| `invite` | show the bot's invitation link |
+| `ping` | check API & Latency of the bot |
+| `version` | check bot version |
 
 ### 🛠 Developer Only
 | Commands | Description |
 | --- | --- |
-| `botimg <attachment>` |  |
-| `botserver` |  |
-| `botstorage` |  |
-| `invis` |  |
-| `ignore <@user/id>` |  |
-| `restart` |  |
-| `rollback <collection name>` |  |
-| `shutdown` |  |
-| `sleep <time>` |  |
-| `unignore <@user/id>` |  |
+| `botimg <attachment>` | change bot avatar image |
+| `botserver` | show all bot's server |
+| `botstorage` | show the collection data usage |
+| `invis [OFF]` | change status to invisible or turn off invisible mode |
+| `ignore <@user/id>` | ignore specific user for talking with bot |
+| `restart` | reload commands |
+| `rollback <collection name>` | truncate collection by name |
+| `shutdown` | shutdown the bot |
+| `sleep <time>` | sleep the bot for specific time |
+| `unignore <@user/id>` | unignore specific user |
 
