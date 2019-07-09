@@ -22,12 +22,12 @@
 ### 📜 Log Recorder
 | Commands | Description |
 | --- | --- |
-| `messagelog <#channel/id>` | set the channel for logging message activity |
-| `modlog <#channel/id>` | set the channel for logging moderator activity |
-| `serverlog <#channel/id>` | set the channel for logging server activity |
-| `starlog <#channel/id>` | set the channel for logging reaction activity |
-| `voicelog <#channel/id>` | set the channel for logging voice activity |
-| `welcomelog <#channel/id>` | set the channel for join or leave activity |
+| `messagelog <#channel/id/OFF>` | set the channel for logging message activity |
+| `modlog <#channel/id/OFF>` | set the channel for logging moderator activity |
+| `serverlog <#channel/id/OFF>` | set the channel for logging server activity |
+| `starlog <#channel/id/OFF>` | set the channel for logging reaction activity |
+| `voicelog <#channel/id/OFF>` | set the channel for logging voice activity |
+| `welcomelog <#channel/id/OFF>` | set the channel for join or leave activity |
 
 ### 📚 Information
 | Commands | Description |
