@@ -69,7 +69,7 @@
 ### 🛠 Hanya Developer
 | Perintah | Deskripsi |
 | --- | --- |
-| `botimg <attachment>` | Mengganti foto profil bot |
+| `botimg <gambar terlampir>` | Mengganti foto profil bot |
 | `botserver` | Memunculkan semua data server bot |
 | `botstorage` | Memunculkan koleksi data bot |
 | `invis [OFF]` | Mengubah status bot menjadi tampak offline (atau sebaliknya) |
