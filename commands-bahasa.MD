@@ -8,7 +8,7 @@
 | `ban <@user/id> [alasan]` | ban seseorang dari server bahkan belum menjadi anggota server |
 | `check <@user/id>`| mengecek semua jejak hukuman yang pernah diterima seseorang |
 | `kick <@user/id> [alasan]` | kick seseorang dari server |
-| `mute <@user/id> [alasan]` | membuat seseorang dilarang berbicara dan dilarang mengirim pesan (atur muted role terlebih dahulu) |
+| `mute <@user/id> [alasan]` | membuat seseorang dilarang berbicara dan mengirim pesan (atur muted role dahulu) |
 | `warn <@user/id> [alasan]`| memberi peringatan berupa DM, kalau diblokir, tetap akan tertulis di jejak moderator |
 | `unban <id> [alasan]`| unban seseorang dari server berdasarkan ID |
 | `unmute <@user/id> [alasan]`| menghapus role muted pada seseorang yang terkena mute |
