@@ -48,6 +48,7 @@
 | `clean <number(1-99)>` | delete message from channel |
 | `delrole <@user/id> <@role/id>` | delete role from someone |
 | `giverole <@user/id> <@role/id>` | give role to someone |
+| `lock`| lock the current channel, changes the @every1's permission unable to `SEND_MESSAGES`|
 | `modrole <@role/id>` | set the moderation role |
 | `mutedrole <@role/id>` | set the role that is muted, let user cannot talk or send messages |
 | `nick <new nick>` | change the current nickname |
@@ -57,6 +58,7 @@
 | `rolecolor <hex number>` | change the role color |
 | `setnick <@user/id> [new nick]` | change the nick for specific user |
 | `timezone <continent/city>` | change the current server timezone (default is **Asia/Jakarta**) |
+| `unlock`| clear the @every1's permission to `SEND_MESSAGES`|
 
 ### 🎮 Bot Information
 | Commands | Description |
