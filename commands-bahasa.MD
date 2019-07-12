@@ -48,6 +48,7 @@
 | `clean <nomor(1-99)>` | Menghapus pesan (pesan lebih dari 14 hari tidak bisa dihapus) |
 | `delrole <@user/id> <@role/id>` | Mengambil role dari seseorang |
 | `giverole <@user/id> <@role/id>` | Memberi role kepada seseorang |
+| `lock` | Mengunci channel, mengubah izin @every1 untuk mengirim pesan menjadi dilarang |
 | `modrole <@role/id/OFF>` | Mengatur role untuk moderasi |
 | `mutedrole <@role/id/OFF>` | Mengatur role untuk muted (melarang untuk berbicara dan kirim pesan) |
 | `nick <nama panggilan baru>` | Mengganti nama panggilan |
@@ -57,6 +58,7 @@
 | `rolecolor <nomor hex>` | Mengganti warna role |
 | `setnick <@user/id> [nama panggilan baru]` | Mengubah nama panggilan seseorang |
 | `timezone <benua/kota>` | Mengganti zona waktu (standarnya **Asia/Jakarta**) |
+| `unlock` | Menghapus izin larangan dimana @every1 dilarang mengizin pesan|
 
 ### 🎮 Informasi Bot
 | Perintah | Deskripsi |
