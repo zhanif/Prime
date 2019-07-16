@@ -47,6 +47,7 @@
 | `autorole <@role/id>` | set the autorole that given every member joined server |
 | `clean <number(1-99)>` | delete message from channel |
 | `delrole <@user/id> <@role/id>` | delete role from someone |
+| `fav <message id>` | create starred message (in STARBOARD) |
 | `giverole <@user/id> <@role/id>` | give role to someone |
 | `lock`| lock the current channel, changes the @every1's permission unable to `SEND_MESSAGES`|
 | `modrole <@role/id>` | set the moderation role |
