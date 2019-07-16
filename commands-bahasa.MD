@@ -47,6 +47,7 @@
 | `autorole <@role/id>` | Mengatur role yang diberikan secara otomatis |
 | `clean <nomor(1-99)>` | Menghapus pesan (pesan lebih dari 14 hari tidak bisa dihapus) |
 | `delrole <@user/id> <@role/id>` | Mengambil role dari seseorang |
+| `fav <pesan id>` | Membuat pesan berbintang (dikirim di Starboard) |
 | `giverole <@user/id> <@role/id>` | Memberi role kepada seseorang |
 | `lock` | Mengunci channel, mengubah izin @every1 untuk mengirim pesan menjadi dilarang |
 | `modrole <@role/id/OFF>` | Mengatur role untuk moderasi |
