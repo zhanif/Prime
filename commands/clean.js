@@ -32,7 +32,7 @@ module.exports.run = async(bot, message, args, db) =>{
 				const filtered = userTag ? userTag.id : bot.user.id;
 				resulted = resulted.filter(m => m.author.id == filtered).array().slice(0, getLimit);
 				await message.channel.bulkDelete(resulted, true).then((result) =>{
-					message.channel.send(`:wastebasket: Cleaned \`${result.size}\` message(s). Note: message more than 14 days can't be deleted`).then(msg => msg.delete(5000));
+					message.channel.send(`:wastebasket: Cleaned \`${result.size}\` message(s) from **${userTag.tag}**. Note: message more than 14 days can't be deleted`).then(msg => msg.delete(5000));
 				});
 			}
 		});
