@@ -14,7 +14,7 @@ module.exports.run = async(bot, message, args, db) =>{
 	if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.channel.send(`:no_entry: Missing permission: \`Manage Messages\``);
 	let check = args[0];
 	if(!check) return message.channel.send(`:no_entry: Missing arguments: \`User ID or Total Messages\``);
-	if(check > 0 && check < 100){
+	if(check > 0 || check < 100){
 		console.log("a");
 		let getLimit = parseInt(check, 10);
 		await message.channel.fetchMessages({limit: getLimit}).then((fetched) =>{
@@ -27,8 +27,10 @@ module.exports.run = async(bot, message, args, db) =>{
 		let userTag = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
 		let getLimit = args[1];
 		if(!userTag || !getLimit) return message.channel.send(`:no_entry: Missing argumets: \`User ID and Total Messages\``);
+		if(getLimit > 99 || getLimit < 0) return message.channel.send(`:no_entry: Missing arguments: \`Amount starts from 1 to 99\``);
 		await message.channel.fetchMessages({limit: 100}).then(async(resulted) =>{
 			if(userTag){
+				console.log(userTag);
 				const filtered = userTag ? userTag.id : bot.user.id;
 				resulted = resulted.filter(m => m.author.id == filtered).array().slice(0, getLimit);
 				await message.channel.bulkDelete(resulted, true).then((result) =>{
@@ -36,6 +38,9 @@ module.exports.run = async(bot, message, args, db) =>{
 				});
 			}
 		});
+	}
+	else{
+		return message.channel.send(`:no_entry: Missing arguments: \`Amount starts from 1 to 99\``);
 	}
 }
 module.exports.help = {
