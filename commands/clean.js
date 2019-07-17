@@ -30,7 +30,6 @@ module.exports.run = async(bot, message, args, db) =>{
 		if(getLimit > 99 || getLimit < 0) return message.channel.send(`:no_entry: Missing arguments: \`Amount starts from 1 to 99\``);
 		await message.channel.fetchMessages({limit: 100}).then(async(resulted) =>{
 			if(userTag){
-				console.log(userTag);
 				const filtered = userTag ? userTag.user.id : bot.user.id;
 				resulted = resulted.filter(m => m.author.id == filtered).array().slice(0, getLimit);
 				await message.channel.bulkDelete(resulted, true).then((result) =>{
