@@ -6,7 +6,7 @@ module.exports.run = async(bot, message, args, db) =>{
     }).then(()=>{
         db.collection('Core').find().toArray(async(err,res) =>{
             let token = res[0].token;
-            await bot.login(process.env.TOKEN);
+            await bot.login(token);
             await message.channel.send(`:large_blue_circle: The bot has been turned on`);
         });
     });
