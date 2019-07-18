@@ -89,8 +89,12 @@ client.connect((err, Mdb)=> {
                                             let msg_array = msg.content.split(" ") ;
                                             let command = msg_array[0];
                                             let args = msg_array.slice(1);
+                                            if(command == `<@${bot.user.id}>`){
+                                                const m = await msg.channel.send("Receiving...");
+   	                                            m.edit(`:signal_strength: Latency: \`${m.createdTimestamp - msg.createdTimestamp}\` ms | API Latency: \`${Math.round(bot.ping)}\` ms`);
+                                            }
             
-                                            if(!command.startsWith(prefix) && !command.startsWith(botPrefix)) return;
+                                            else if(!command.startsWith(prefix) && !command.startsWith(botPrefix)) return;
                                             else{
                                                 if(bot.commands.get(command.slice(prefix.length)) || bot.commands.get(command.slice(botPrefix.length))){
                                                     let runCMD = bot.commands.get(command.slice(prefix.length)) || bot.commands.get(command.slice(botPrefix.length));
