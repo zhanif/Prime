@@ -17,6 +17,10 @@ module.exports = {
                 emoji = ":boot:";
                 typeCase = "kicked";
             }
+            else if(type == "report"){
+                emoji = ":round_pushpin:";
+                typeCase = "reported";
+            }
             else if(type == "unban"){
                 emoji = ":flag_white:";
                 typeCase = "unbanned";
@@ -29,8 +33,12 @@ module.exports = {
                 emoji = ":warning:";
                 typeCase = "warned";
             }
-
-            message = `\`${time}\` \`[${logNumber}]\` ${emoji} **${executor}** ${typeCase} **${target.tag}** (ID: ${target.id})`;
+            if(logNumber!= 0){
+                message = `\`${time}\` \`[${logNumber}]\` ${emoji} **${executor}** ${typeCase} **${target.tag}** (ID: ${target.id})`;
+            }
+            else{
+                message = `\`${time}\` ${emoji} **${executor}** ${typeCase} **${target.tag}** (ID: ${target.id})`;
+            }
             if(reason){
                 message = message+`\n\`[ Reason ]\` ${reason}`;
             }

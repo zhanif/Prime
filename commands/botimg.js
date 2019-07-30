@@ -1,6 +1,6 @@
 require('dotenv');
 module.exports.run = async(bot, message, args, db) =>{
-    if(message.author.id != process.env.OWNER) return;
+    if(message.author.id!=process.env.OWNER) return message.channel.send(`:no_entry: Developer Only`);
     let link = message.attachments.first().url;
     if(!link) return message.channel.send(`:no_entry: Missing arguments: \`Attachment\``);
     bot.user.setAvatar(link);

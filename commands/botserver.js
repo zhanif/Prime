@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const color = require('.././EmbedColor');
 require('dotenv');
 module.exports.run = async(bot, message, args, db) =>{
-    if(message.author.id != process.env.OWNER) return;
+    if(message.author.id!=process.env.OWNER) return message.channel.send(`:no_entry: Developer Only`);
     let data = [];
     bot.guilds.forEach(x => {
         data.push(`**${x.name}** | \`${x.memberCount}\` members (ID: ${x.id})`);

@@ -1,6 +1,6 @@
 require('dotenv');
 module.exports.run = async(bot, message, args, db) =>{
-    if(message.member.id!=process.env.OWNER) return message.channel.send(`:no_entry: Invalid commands, aborting`);
+    if(message.author.id!=process.env.OWNER) return message.channel.send(`:no_entry: Developer Only`);
     let time = args[0];
     if(!time || time.isNan || time<0) return message.channel.send(`:no_entry: Invalid commands, aborting`);
     message.channel.send(`:red_circle: The bot has been turned off. Sleeping for ${time} minutes`).then(msg =>{

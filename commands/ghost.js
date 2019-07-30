@@ -25,7 +25,7 @@ module.exports.run = async(bot, message, args, db) =>{
     //     }
     // });
 
-    message.channel.send(`:no_entry: Temporarily disabled for now`);
+    if(message.author.id!=process.env.OWNER) return message.channel.send(`:no_entry: Developer Only`);
 }
 
 module.exports.help = {
