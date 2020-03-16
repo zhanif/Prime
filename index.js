@@ -671,7 +671,7 @@ client.connect((err, Mdb)=> {
                 bot.on('guildCreate', async gData =>{
                     if(typeof(gData) == undefined) return;
                     try{
-                        if(gData.memberCount < 20 && gData.id != botCore){
+                        if(gData.memberCount < 5 && gData.id != botCore){
                             setTimeout(() => {
                                 bot.guilds.get(gData.id).leave();                        
                             }, 60000);
